@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-name: martinkro
+name: Matin Kro's Blog
+description: focus on computer tech such as python,c/c++,web design,machine learning ... 
 markdown: kramdown
 kramdown:
   input: GFM
@@ -24,4 +25,16 @@ kramdown:
     - smart
   syntax_highlighter: rouge
 highlighter: rouge
-permalink: /blog/:year/:month/:day/:title
+permalink: /articles/:year/:month/:day/:title
+
+author: Martin Kro
+github: https://github.com/martinkro
+
+baseurl: /
+paginate: 15
+paginate_path: "articles/page:num"
+
+gems:
+  - jekyll-paginate # install the paginate plugin
+  - jekyll-watch
+  - jekyll-assets
