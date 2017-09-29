@@ -22,13 +22,23 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  martinkro
 
 # Build settings
-# markdown: kramdown
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  hard_wrap: true
+#markdown: redcarpet
+#redcarpet:
+#  hard_wrap: true
+#  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 # theme: minima
 # theme: midnight
 # theme: modernist
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+permalink: /articles/:year/:month/:day/:title
+paginate: 8
+paginate_path: "articles/page:num"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,5 +53,5 @@ plugins:
 #   - vendor/ruby/
 
 disqus:
-    shortname: sundayliu
+  shortname: sundayliu
 google_analytics: UA-86517450-2
