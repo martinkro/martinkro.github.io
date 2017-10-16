@@ -52,6 +52,4 @@ paginate_path: "articles/page:num"
 #   - vendor/gems/
 #   - vendor/ruby/
 
-disqus:
-  shortname: sundayliu
 google_analytics: UA-86517450-2
